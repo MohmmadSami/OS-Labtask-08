@@ -1,68 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Riphah LMS System</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riphah LMS System</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Riphah Learning Management System</h1>
-        <nav>
-            <ul>
-                <li><a href="#dashboard">Dashboard</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#students">Students</a></li>
-                <li><a href="#login">Login</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="dashboard">
-            <h2>Dashboard</h2>
-            <p>Welcome to the Riphah LMS. Manage your courses and students here.</p>
-        </section>
-        <section id="courses">
-            <h2>Courses</h2>
-            <div class="course-list">
-                <div class="course">
-                    <h3>Course 1</h3>
-                    <p>Description of Course 1.</p>
-                </div>
-                <div class="course">
-                    <h3>Course 2</h3>
-                    <p>Description of Course 2.</p>
-                </div>
-            </div>
-        </section>
-        <section id="students">
-            <h2>Students</h2>
-            <div class="student-list">
-                <div class="student">
-                    <h3>Student 1</h3>
-                    <p>Details of Student 1.</p>
-                </div>
-                <div class="student">
-                    <h3>Student 2</h3>
-                    <p>Details of Student 2.</p>
-                </div>
-            </div>
-        </section>
-        <section id="login">
-            <h2>Login</h2>
-            <form id="login-form">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <button type="submit">Login</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2023 Riphah LMS System</p>
-    </footer>
-    <script src="script.js"></script>
+  <header>
+    <div class="logo">
+      <h1>Riphah LMS</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#students">Students</a></li>
+        <li><a href="#login" class="login-btn">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="dashboard" class="section">
+      <h2>Dashboard</h2>
+      <p>Welcome to the Riphah Learning Management System. Manage your courses, students, and learning progress here.</p>
+    </section>
+
+    <section id="courses" class="section">
+      <h2>Courses</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Software Engineering</h3>
+          <p>Learn how to design, develop, and test large-scale software systems.</p>
+          <button>View Course</button>
+        </div>
+        <div class="card">
+          <h3>Database Systems</h3>
+          <p>Understand relational models, SQL, and database management principles.</p>
+          <button>View Course</button>
+        </div>
+        <div class="card">
+          <h3>Web Development</h3>
+          <p>Master HTML, CSS, JavaScript, and web frameworks for modern websites.</p>
+          <button>View Course</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="students" class="section">
+      <h2>Students</h2>
+      <div class="grid">
+        <div class="card student">
+          <h3>Ali Khan</h3>
+          <p>Software Engineering | 6th Semester</p>
+          <button>View Profile</button>
+        </div>
+        <div class="card student">
+          <h3>Fatima Ahmed</h3>
+          <p>Computer Science | 4th Semester</p>
+          <button>View Profile</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="login" class="section login-section">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Riphah LMS System | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
